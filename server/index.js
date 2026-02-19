@@ -8,9 +8,11 @@ dotenv.config();
 const app = express();
 
 // Middleware
+// Middleware
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'],
-    credentials: true
+    origin: '*', // Allow all origins for Vercel deployment
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }));
 app.use(express.json());
 

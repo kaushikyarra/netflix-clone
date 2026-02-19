@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+    // Fallback to relative path '/api' for Vercel deployments where backend is on same domain
+    baseURL: import.meta.env.VITE_API_URL || '/api',
 });
 
 instance.interceptors.request.use(request => {
