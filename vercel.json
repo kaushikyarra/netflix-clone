@@ -24,10 +24,12 @@
     }
   ],
   "env": {
-    "DB_HOST": "your-production-db-host",
-    "DB_USER": "your-production-db-user",
-    "DB_PASSWORD": "your-production-db-password",
-    "DB_NAME": "kodnest_movie_db",
+    "DB_HOST": "mysql-774e4e8-movie-netflix.b.aivencloud.com",
+    "DB_USER": "avnadmin",
+    "DB_PASSWORD": "AVNS_hgp8QpMsfO2UFgTPC3E",
+    "DB_NAME": "defaultdb",
+    "DB_PORT": "22242",
+    "DB_SSL": "true",
     "TMDB_API_KEY": "ef3330a767e6844c250779cc3b46bed4"
   }
 }
