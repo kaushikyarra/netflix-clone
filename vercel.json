@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/client/$1"
+    }
+  ],
+  "env": {
+    "DB_HOST": "your-production-db-host",
+    "DB_USER": "your-production-db-user",
+    "DB_PASSWORD": "your-production-db-password",
+    "DB_NAME": "kodnest_movie_db",
+    "TMDB_API_KEY": "ef3330a767e6844c250779cc3b46bed4"
+  }
+}
