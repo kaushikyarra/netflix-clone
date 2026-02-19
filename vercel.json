@@ -30,6 +30,7 @@
     "DB_NAME": "defaultdb",
     "DB_PORT": "22242",
     "DB_SSL": "true",
-    "TMDB_API_KEY": "ef3330a767e6844c250779cc3b46bed4"
+    "TMDB_API_KEY": "ef3330a767e6844c250779cc3b46bed4",
+    "JWT_SECRET": "your_super_secret_jwt_key"
   }
 }
